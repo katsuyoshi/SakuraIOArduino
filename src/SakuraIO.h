@@ -106,7 +106,7 @@ protected:
   uint8_t receiveByte();
   uint8_t mode;
 public:
-  SakuraIO_I2C();
+  SakuraIO_I2C(bool initialize_wire = true);
 };
 
 #endif // _SAKURAIO_H_
