@@ -69,7 +69,7 @@ uint8_t SakuraIO_I2C::receiveByte(bool stop){
   return ret;
 }
 
-SakuraIO_I2C::SakuraIO_I2C(bool initialize_wire = true) {
+SakuraIO_I2C::SakuraIO_I2C(bool initialize_wire) {
   if (initialize_wire) {
     Wire.begin();
   }
